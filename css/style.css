@@ -6,10 +6,6 @@
     --Neon-Green: hsl(150, 100%, 66%);
 }
 
-@font-face {
-    font-family: Manrope;
-    src: url(/fonts/static/Manrope-Medium.ttf);
-}
 
 *{
     padding: 0;
@@ -81,8 +77,3 @@
     width: 23px;
 }
 
-@media only screen and (max-width:500px) {
-    .decoration{
-        background-image: url(/advice-generator-app-main/images/pattern-divider-mobile.svg);
-    }
-}
