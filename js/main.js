@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const apiURL = 'https://api.adviceslip.com/advice'
+    const apiURL = 'https://api.adviceslip.com/advice';
 
     $(".dice").click(function(){
         $.ajax({
@@ -8,10 +8,10 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 var numberID = Number(response.slip.id)
-                var adviceText = response.slip.advice
-                $(".numberText").text(`Advice #${numberID}`)
-                $(".adviceText").text(adviceText)
-                console.log(numberID,adviceText)
+                var adviceText = response.slip.advice;
+                $(".numberText").text(`Advice #${numberID}`);
+                $(".adviceText").text('"' + adviceText + '"');
+                console.log(numberID,adviceText);
             }
         });
     })
